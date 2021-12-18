@@ -1,0 +1,5 @@
+10,10,addition,20.0
+10,10,subtraction,0.0
+10,10,division,1.0
+10,10,multiplication,100.0
+10,20,addition,30.0

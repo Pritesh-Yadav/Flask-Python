@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Page2{% endblock %}
+
+{% block content %}
+<section id="pg21">
+
+    <div class="row">
+        <div class="part22">
+            <img src="{{ url_for('static', filename='images/lawrence.jfif') }}" class="lawrence">
+            <p class="part23">
+                In 1962,Dr Leonard Kleinrock invented the queue structure for packets.
+                It determined speed of the network through demand access and distributed control system.
+                Paul Baran was hired to see if the circuit switching could be replaced with anything else.
+                He got an idea from rat maze and came up with hot potato routing resulting in the invention of packet
+                switching in 1969.
+                <br>
+                In 1966,Bob Taylor would have to log in different computers just to communicate.
+                He wanted to build a system where the computers would be in a single network so that
+                he would not need to log in into each and every terminal.The term that they used was <b>RESOURCE SHARING</b>.
+                It was eventually used to transfer files.
+                Taylor hired Dr.Lawrence Roberts to do the job as Roberts built the first connection between two computers at MIT before.
+                Frank Hart from the BBN team bid the project on packet switching and built it.They also built amps for ARPANET.
+                Their plan was to install computers with packet switching technology in four universities.
+                The universities were:University of California, Los Angeles, (U.C.L.A.),
+                the Stanford Research Institute (S.R.I.) , U.C. Santa Barbara (UCSB),
+                and the University of Utah.<br>On September 1, 1969 first piece of hardware was installed at UCLA.
+                By 1969, all the four computers were connected to each other.
+                First files and data were sent amongst these computers but then eventually started sending email.
+                Inventor of email was <b>Raymond Tomlinson</b>.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="pg24">
+
+    <div class="row">
+        <div class="part25">
+            <img src="{{ url_for('static', filename='images/marc.jfif') }}" class="altair">
+            <p class="part26">
+                <br>
+                In 1972, ARPANET had fewer than 25 sites online.
+                The National Science Foundation was on the network to receive grant money.
+                In the absence of TCP/IP protocol there were different networks which would run with the help of their
+                own set of rules instead of an unified one.This made the user
+                experience  really inconvenient.
+                In 1992, there were only 50 website pages on the internet.
+                <br>
+                <br>
+                In 1993,Marc Andreessen at University of Illinois made the internet with GUI (Graphical User Interface) .
+                For normal people it was very difficult to find whatever they wanted.
+                Marc made a software which could show text and jump around a scrollbar making it user friendly for the users.
+                After the advent of Marc's discovery, In 1993, the Internet grew by 341000%.
+                At present there are 11 million domain names and 70 million websites. </p>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

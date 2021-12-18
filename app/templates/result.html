@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Result{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <h1>Recent Result</h1>
+        <strong>Value 1: </strong> {{ val1 }} <br>
+        <strong>Value 2: </strong> {{ val2 }} <br>
+        <strong>Operation: </strong> {{ ope }} <br>
+        <strong>Result: </strong> {{ res }}
+        <br/><br/>
+        <hr/>
+        <h1>History Results</h1>
+        <table id="data" class="dataTable cell-border">
+            <thead>
+            <tr>
+                <th>Sr No.</th>
+                <th>Value1</th>
+                <th>Value2</th>
+                <th>Operation</th>
+                <th>Result</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in hist %}
+                <tr>
+                    <td>{{ hist.index(item) }}</td>
+                    <td>{{ item[0] }}</td>
+                    <td>{{ item[1] }}</td>
+                    <td>{{ item[2] }}</td>
+                    <td>{{ item[3] }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

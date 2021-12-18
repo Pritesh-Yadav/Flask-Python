@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Page1{% endblock %}
+
+{% block content %}
+
+<section id="pg11">
+
+    <div class="row">
+        <div class="part12">
+            <img src="{{ url_for('static', filename='images/arpanet.jpg') }}" class="arp">
+            <p class="part13">In world war II,circuit swithcing was used as the mode of communication.
+                The drawback of this technology:it was a centralized system. Enemies could explode
+                the central system and there would be no point of communication.So, leaders thought
+                they needed another technology to avoid this.
+                Therefore,<b>President Dwight D Eisenhower</b> started an organisation called ARPA(Advanced Research Project Agency).
+                Objective of this organisation: To facilitate research in technology with potential military applications.
+                ARPA gave their military requirements to private companies and universities to do the research on
+                their behalf in exchange for money or funds.
+                On February 7,1958 ARPA was renamed to <b>DARPA(Defense Advanced Research Projects Agency)</b>.
+                DARPA's first project was ARPANET(Advanced Research Projects Agency Network), which was the forerunner
+                of the Internet in 1966.This project was initiated with <b>J.C.R Licklider</b> along with <b>Bob Taylor</b>.
+                They founded TCP/IP protocol to overcome circuit switching drawback.
+                DARPA’s first project ARPANET came to fruition in 1969 with packet switching(a distributed network).
+                Along with J.C.R Licklider,Bob Taylor was also a part of the research which was
+                the foundation of today's internet.Later he founded XEROX PARC as well.At that time XEROX PARC was doing its
+                own research as well. They built the first computer with GUI(Graphical user interface).They
+                also invented laser printers and were responsible for making email which is used extensively to this date.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="pg14">
+
+    <div class="row">
+        <div class="part15">
+            <img src="{{ url_for('static', filename='images/altair.jfif') }}" class="altair">
+            <p class="part16">Altair 8800 was the first personal computer made.
+                For 8 bits there were 8 switches which were used to type a message and that message would be
+                showed on a monitor.In 1976,Steve Wozniak and Steve Jobs sold Apple II as their first commercial computer.
+                In this computer keyboard was installed along with the display unlike Altair 8800.
+                Apple II was a success and was disrupting IBM market share.IBM used to sell mainframe computers.
+                They wanted to make BIOS as well.Therefore,IBM went to Gary Kildall who made
+                CPM(Control Program for microcomputers)
+                operating system.However,the deal did not happen.IBM then went to Microsoft and Bill Gates
+                provided them with the BIOS similar to that of Gary Kildall with minor changes. Bill licensed that product.
+                <br>
+                On <b>August 6,1991,Al Gore,vice-president of the United States</b> made ARPANET public.
+                Internet was used by the military and organisation for research and development till that date.
+                However, once it was made public people could use it to communicate to each other throughout the United States.
+                <br>
+                <b>In 1989,Tim Berners-Lee</b>, a British scientist,invented HTTP protocol and HTML for the publicly available internet.
+                Before the advent of http protocol people could only send files and emails via the Internet but
+                could not type in an address and view the web page present in that server.However, with the advent of the
+                http protocol this was possible.
+
+
+
+            </p>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
